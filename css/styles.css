@@ -9,6 +9,7 @@ body {
   background-image: url(../images/bg-image.svg);
   background-size: cover;
   color: #ffffff;
+  min-height: 100vh;
 }
 
 .container {
@@ -79,6 +80,8 @@ input::placeholder {
   color: #CDD5E0;
 }
 
+#name,
+#company-email,
 #company-size,
 #subject,
 #message {
@@ -94,6 +97,13 @@ input::placeholder {
   display: inline-block;
   font-size: 1.25rem;
   font-family: inherit;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #4036A9 ;
+  color: #fff;
 }
 
 .btn-primary {
@@ -102,4 +112,49 @@ input::placeholder {
   color: #4036A9;
   font-weight: 900;
   padding: 1.3em 0;
+}
+
+@media (max-width: 1024px) {
+  .contact-heading {
+    max-width: 500px;
+  }
+
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+  }
+  
+  .subtitle {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .name-field,
+  .email-field,
+  .company-size-field,
+  .subject-field {
+    width: 100%;
+  }
+
+  .email-field,
+  .company-size-field,
+  .subject-field {
+    margin-bottom: 1em;
+  }
+}
+
+@media (max-width: 420px) {
+  .title {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+  }
 }
