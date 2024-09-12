@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 1rem;
+  background-image: url(../images/bg-image.svg);
+  background-size: cover;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-heading {
+  max-width: 780px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+
+.subtitle {
+  font-size: 2rem;
+}
+
+.contact-form {
+  max-width: 800px;
+  margin: 0 auto 3rem auto;
+}
+
+.name-field,
+.email-field,
+.company-size-field,
+.subject-field {
+  width: 49%;
+}
+
+.name-field {
+  margin-bottom: 1em;
+}
+
+label {
+  font-size: 0.875rem;
+}
+
+input,
+#company-size,
+#subject {
+  padding: 1.5em 1em;
+}
+
+input,
+#company-size,
+#subject,
+#message,
+.btn-primary {
+  width: 100%;
+  font: inherit;
+  border: none;
+  border-radius: 10px;
+  color: #111729;
+}
+
+input::placeholder {
+  color: #CDD5E0;
+}
+
+#company-size,
+#subject,
+#message {
+  font-weight: bold;
+}
+
+#message {
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 1.25rem;
+  font-family: inherit;
+}
+
+.btn-primary {
+  border: none;
+  background-color: #fff;
+  color: #4036A9;
+  font-weight: 900;
+  padding: 1.3em 0;
+}
